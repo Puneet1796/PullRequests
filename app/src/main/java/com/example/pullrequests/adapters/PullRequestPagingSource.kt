@@ -37,12 +37,7 @@ class PullRequestPagingSource @Inject constructor(
                 LoadResult.Page(requests, prevPage, nextPageKey + 1)
             }
         } catch (e: HttpException) {
-            val code = e.code()
-            if (code == 401) {
-                LoadResult.Error(NetworkExceptions.Unauthorized)
-            } else {
-                LoadResult.Error(NetworkExceptions.Generic)
-            }
+            LoadResult.Error(NetworkExceptions.Generic)
         } catch (e: IOException) {
             LoadResult.Error(NetworkExceptions.NoInternet)
         } catch (e: Exception) {

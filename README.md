@@ -1,6 +1,6 @@
 # Pull Requests
 
-The project demonstrates a list of all the 'closed' pull requests in a single repository on Github. It is developed entirely with Kotlin and follows MVVM architecture pattern. Essentials errors have been handled such as `401 - Unauthorized`, `No Internet` and rest of the errors does not require customized message for the user.
+The project demonstrates a list of all the 'closed' pull requests in a single repository on Github. It is developed entirely with Kotlin and follows MVVM architecture pattern. Essentials errors have been handled such as API Errors `401 - Unauthorized, 404 - API Not found`, `No Internet`.
 
 The following libraries have been used in the project to reduce the boilerplate as well as to make use of the Android SDK in a better way.
 - [Glide](https://github.com/bumptech/glide) - Image processing
