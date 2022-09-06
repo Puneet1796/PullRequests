@@ -1,5 +1,6 @@
 package com.example.pullrequests.network
 
+import com.example.pullrequests.BuildConfig
 import com.example.pullrequests.utils.HEADER_ACCEPT
 import com.example.pullrequests.utils.HEADER_AUTHORIZATION
 import okhttp3.Interceptor
@@ -13,7 +14,7 @@ class HeaderInterceptor @Inject constructor() : Interceptor {
         // gradle.properties so that it can't be extracted from the apk
         val nRequest = request.newBuilder()
             .addHeader(HEADER_ACCEPT, "application/vnd.github+json")
-            .addHeader(HEADER_AUTHORIZATION, "Bearer ")
+            .addHeader(HEADER_AUTHORIZATION, "Bearer ${BuildConfig.GITHUB_ACCESS_TOKEN}")
             .build()
         return chain.proceed(nRequest)
     }
