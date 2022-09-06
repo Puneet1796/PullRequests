@@ -5,7 +5,7 @@ The project demonstrates a list of all the 'closed' pull requests in a single re
 The following libraries have been used in the project to reduce the boilerplate as well as to make use of the Android SDK in a better way.
 - [Glide](https://github.com/bumptech/glide) - Image processing
 - [Retrofit](https://github.com/square/retrofit) - Network calls
-- [Kotlin Corutines](https://github.com/Kotlin/kotlinx.coroutines) - Handling api responses
+- [Kotlin Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Handling api responses
 - ActivityKtx - provides helpful extensions/delegates such as `viewModels()`
 - [Hilt](https://github.com/google/dagger) - Dependency injection
 - [Http Logging Interceptor](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor) - Logging API calls to the console
